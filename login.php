@@ -15,6 +15,8 @@
       $msg = '';
       $users = ['user'=>"test", "manager"=>"secret", "guest"=>"abc123"];
 
+      print_r($users);
+
       if (isset($_POST['login']) && !empty($_POST['username']) 
       && !empty($_POST['password'])) {
          $user=$_POST['username'];                  
